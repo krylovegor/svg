@@ -2,7 +2,52 @@
 <head></head>
 <body>
 <h1>Stadium</h1>
-<svg width='1500' height='700'><rect x=200 y=100 width='700' height='300' fill='rgb(189,186,171)' />
+<rect x='0' y='0' width='1500' height='340' fill='rgb(0,132,140)' />
+<svg width='1500' height='700'>
+<rect x='0' y='0' width='1500' height='350' fill='blue' />
+<rect x='0' y='350' width='1500' height='350' fill='green' />
+ <circle id="small" cx="350" cy="550" r="50" stroke="white" stroke-width="10" fill="blue" />
+ <rect id="rect1" x=390 y=500 width='20' height='90' fill='white' />
+ <rect id="rect2" x=350 y=500 width='40' height='20' fill='white' />
+ <rect id="rect3" x=350 y=450 width='30' height='70' fill='white' />
+ <circle id="small1" cx="365" cy="435" r="17" stroke-width="1" fill="white" />
+
+ <animate 
+           xlink:href="#small"
+           attributeName="cx"
+           values="350;1000;550"
+           dur="10s"
+           repeatCount="1"
+/>
+<animate 
+           xlink:href="#small1"
+           attributeName="cx"
+           values="365;1015;565"
+           dur="10s"
+           repeatCount="1"
+/>
+<animate 
+           xlink:href="#rect1"
+           attributeName="x"
+           values="390;1040;590"
+           dur="10s"
+           repeatCount="1"
+/>
+<animate 
+           xlink:href="#rect2"
+           attributeName="x"
+           values="350;1000;550"
+           dur="10s"
+           repeatCount="1"
+/>
+<animate 
+           xlink:href="#rect3"
+           attributeName="x"
+           values="350;1000;550"
+           dur="10s"
+           repeatCount="1"
+/>
+<rect x=200 y=100 width='700' height='300' fill='rgb(189,186,171)' />
 <rect x='220' y='100' width='50' height='300' fill='rgb(109,132,140)' />
 <rect x='320' y='100' width='50' height='300' fill='rgb(109,132,140)' />
 <rect x='420' y='100' width='50' height='300' fill='rgb(109,132,140)' />
